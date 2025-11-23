@@ -1,0 +1,25 @@
+@use 'variables';
+
+@mixin desktop-styles() {
+    @media #{variables.$desktop-bp} {
+        @content;
+    }
+}
+
+@mixin tablet-landscape-styles() {
+    @media #{variables.$tablet-landscape-bp} {
+        @content;
+    }
+}
+
+@mixin tablet-portrait-styles() {
+    @media #{variables.$tablet-portrait-bp} {
+        @content;
+    }
+}
+
+@mixin mobile-styles() {
+    @media #{variables.$mobile-bp} {
+        @content;
+    }
+}
