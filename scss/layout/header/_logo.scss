@@ -1,0 +1,27 @@
+@use '../../common/variables';
+@use '../../common/mixins';
+
+
+.header__logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .header__logo-name {
+        font-family: variables.$secondary-ff;
+        color: variables.$white-color;
+
+        font-size: 3.25em;
+        font-weight: 400;
+
+        background-color: variables.$logo-color;
+        padding: 0.2em 0.25em;
+        border-radius: 5px;
+    }
+
+    .header__logo-credit {
+        font-size: 0.9em;
+    }
+
+    @include mixins.tablet-portrait-styles() {flex-direction: column;}
+}

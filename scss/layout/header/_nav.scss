@@ -1,0 +1,21 @@
+@use '../../common/variables';
+@use '../../common/mixins';
+
+
+.header__nav {
+    font-size: 0.9em;
+    .header__nav-list {
+        display: flex;
+        gap: 10px;
+        a {
+            padding: 10px 15px;
+            border-radius: 8px;
+            &:hover {
+                background-color: variables.$white-color;
+            }
+        }
+    }
+
+    @include mixins.tablet-portrait-styles() {display: none;}
+        
+    }
