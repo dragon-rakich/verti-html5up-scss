@@ -1,0 +1,37 @@
+@use '../../common/variables';
+@use '../../common/mixins';
+
+.header {
+    padding: 50px 0;
+
+    color: variables.$primary-color;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .header__logo-name {
+            font-family: variables.$secondary-ff;
+            background-color: variables.$logo-color;
+            color: variables.$white-color;
+            padding: 20px 30px;
+            border-radius: 5px;
+         }
+
+        .header__logo-credit {
+        }
+    }
+
+    .header__nav {
+        .header__nav-list {
+            display: flex;
+            gap: 50px;
+        }
+    }
+}
