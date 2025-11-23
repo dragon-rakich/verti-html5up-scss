@@ -4,3 +4,8 @@ body {
     font-family: variables.$primary-ff;
     background-color: variables.$page-bg-color;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
