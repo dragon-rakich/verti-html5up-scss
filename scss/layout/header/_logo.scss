@@ -21,6 +21,7 @@
 
     .header__logo-credit {
         font-size: 0.9em;
+        font-weight: 800;
     }
 
     @include mixins.tablet-portrait-styles() {flex-direction: column;}

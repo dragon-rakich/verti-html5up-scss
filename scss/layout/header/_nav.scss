@@ -8,7 +8,8 @@
         display: flex;
         gap: 10px;
         a {
-            padding: 10px 15px;
+            padding: 0.5em 1em;
+            font-weight: 800;
             border-radius: 8px;
             &:hover {
                 background-color: variables.$white-color;
