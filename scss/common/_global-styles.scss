@@ -9,10 +9,10 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1400px;
     @include mixins.desktop-styles() {max-width: 1200px;};
-    @include mixins.tablet-landscape-styles() {max-width: 1000px;};
-    @include mixins.tablet-portrait-styles() {max-width: 700px;};
+    @include mixins.tablet-landscape-styles() {max-width: 960px;};
+    @include mixins.tablet-portrait-styles() {max-width: 90%;};
     @include mixins.mobile-styles() {padding: 0 20px;};
 
 
