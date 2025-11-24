@@ -1,0 +1,11 @@
+.blog {
+    margin: 3em 0;
+    .blog__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        .blog__col {
+
+        }
+    }
+}
