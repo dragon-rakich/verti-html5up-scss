@@ -1,0 +1,19 @@
+@use '../../common/mixins';
+
+@use 'column';
+@use 'copyright-line';
+
+
+.footer {
+    padding-top: 6em;
+    padding-bottom: 8em;
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        margin-bottom: 4em;
+        @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr 1fr; gap: 60px}
+        @include mixins.mobile-styles() {grid-template-columns: 1fr; gap: 0;}
+    }
+}
