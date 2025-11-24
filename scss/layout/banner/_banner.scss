@@ -1,0 +1,38 @@
+@use '../../common/variables';
+@use '../../common/mixins';
+
+.banner {
+    background-color: variables.$white-color;
+    padding: 4.5em;
+
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+
+    @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
+
+    .banner__content {
+        @include mixins.tablet-portrait-styles() {text-align: center;}
+
+        .banner__title {
+            font-size: 4em;
+            font-weight: 800;
+
+            margin-top: 0.1em;
+            margin-bottom: 0.35em;
+            
+        }
+
+        .banner__text {
+            font-size: 3.2em;
+            font-weight: 400;
+            line-height: 1.35em;
+            color: rgb(68, 68, 68, 0.7)//variables.$grey-text-color;
+        }
+    }
+
+    .banner__buttons {
+
+    }
+}

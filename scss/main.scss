@@ -1,3 +1,6 @@
 @use 'common/reset';
+@use 'common/variables';
+
 @use 'common/global-styles';
-@use 'layout/header/header'
+@use 'layout/header/header';
+@use 'layout/banner/banner';
