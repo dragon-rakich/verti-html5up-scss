@@ -1,5 +1,22 @@
 @use '../../common/variables';
+@use '../../common/mixins';
+
+@use 'gallery';
+@use 'content';
+
 
 .about {
     background-color: variables.$white-color;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+    padding: 5em 0;
+    .about__grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 90px;
+        @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
+        
+        .about__col {
+        
+        }
+    }
 }
