@@ -1,3 +1,5 @@
+@use '../../common/mixins';
+
 .blog {
     margin: 3em 0;
     .blog__grid {
@@ -7,5 +9,6 @@
         .blog__col {
 
         }
+        @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
     }
 }
