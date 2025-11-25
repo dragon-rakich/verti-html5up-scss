@@ -6,6 +6,8 @@
 
 
 .about {
+    font-size: 1.0625em;
+
     background-color: variables.$white-color;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 5em 0;
@@ -14,8 +16,8 @@
         grid-template-columns: 1fr 2fr;
         @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
         
-        .about__col {
-        
+        .about__col:nth-child(2) {
+            @include mixins.tablet-portrait-styles() {grid-row: 1/2;}
         }
     }
 }
