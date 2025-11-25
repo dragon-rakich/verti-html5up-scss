@@ -12,7 +12,6 @@
     .about__grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        gap: 90px;
         @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
         
         .about__col {
