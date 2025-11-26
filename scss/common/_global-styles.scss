@@ -1,11 +1,20 @@
 @use 'variables';
 @use 'mixins';
 
+html {
+    @include mixins.desktop-styles() {font-size: 0.875rem;}
+    @include mixins.tablet-landscape-styles() {font-size: 0.84375rem;}
+    @include mixins.mobile-styles() {font-size: 0.75rem;}
+}
 
 body {
     font-family: variables.$primary-ff;
     background-color: variables.$page-bg-color;
     color: variables.$primary-color;
+}
+
+a {
+    display: inline-block;
 }
 
 .container {
