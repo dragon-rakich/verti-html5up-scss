@@ -12,7 +12,9 @@
     display: grid;
     grid-template-columns: 60% 40%;
 
-    @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
+    @include mixins.tablet-landscape-styles() {font-size: 0.9rem;}
+    @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr; font-size: 1rem;}
+    
 
     .banner__content {
         @include mixins.tablet-portrait-styles() {text-align: center;}
