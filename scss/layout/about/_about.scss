@@ -11,13 +11,21 @@
     background-color: variables.$white-color;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 5em 0;
+    @include mixins.tablet-portrait-styles() {padding: 0;}
+    // @include mixins.mobile-styles() {font-size:  rem;}
+
     .about__grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
         @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
         
-        .about__col:nth-child(2) {
-            @include mixins.tablet-portrait-styles() {grid-row: 1/2;}
+        .about__col {
+            @include mixins.tablet-portrait-styles() {
+                padding-block: 5em;
+            }
+            &:nth-child(2) {
+                @include mixins.tablet-portrait-styles() {grid-row: 1/2; border-bottom: 1px solid #e8e8e8;}
+            }
         }
     }
 }
