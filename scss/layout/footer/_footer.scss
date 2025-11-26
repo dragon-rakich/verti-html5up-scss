@@ -7,6 +7,8 @@
 .footer {
     padding-top: 6em;
     padding-bottom: 8em;
+    @include mixins.mobile-styles() {padding-top: 0; padding-bottom: 5em; font-size: 1.1875rem;}
+    
 
     .footer__grid {
         display: grid;
@@ -14,6 +16,6 @@
 
         margin-bottom: 4em;
         @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr 1fr; gap: 60px}
-        @include mixins.mobile-styles() {grid-template-columns: 1fr; gap: 0;}
+        @include mixins.mobile-styles() {grid-template-columns: 1fr; gap: 0; padding-inline: 1.5em; margin-bottom: 0.8em;}
     }
 }
