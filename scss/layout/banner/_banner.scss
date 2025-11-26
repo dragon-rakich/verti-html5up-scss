@@ -13,7 +13,9 @@
     grid-template-columns: 60% 40%;
 
     @include mixins.tablet-landscape-styles() {font-size: 0.9rem;}
-    @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr; font-size: 1rem;}
+    @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr; gap: 55px;}
+    @include mixins.mobile-styles() {font-size: 0.59375rem; gap: 20px; padding: 4.5em 1.8em;}
+
     
 
     .banner__content {
@@ -25,7 +27,8 @@
 
             margin-top: 0.1em;
             margin-bottom: 0.35em;
-            
+            @include mixins.mobile-styles() {margin-bottom: 0.55em;}
+
         }
 
         .banner__text {
@@ -39,6 +42,8 @@
     .banner__buttons {
         .btn {
             margin-bottom: 0.5em;
+            @include mixins.mobile-styles() {margin-bottom: 1em;}
+
         }
     }
 }
