@@ -11,8 +11,8 @@
     background-color: variables.$white-color;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 5em 0;
-    @include mixins.tablet-portrait-styles() {padding: 0;}
-    // @include mixins.mobile-styles() {font-size:  rem;}
+    @include mixins.tablet-portrait-styles() {padding: 0; font-size: 1.0625rem;}
+    @include mixins.mobile-styles() {font-size: 1.1875rem;}
 
     .about__grid {
         display: grid;
