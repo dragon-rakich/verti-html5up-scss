@@ -1,12 +1,16 @@
 @use '../../common/variables';
+@use '../../common/mixins';
 
 .about__content {
+
     .about__title {
         font-size: 2.25em;
         font-weight: 800;
 
         margin-bottom: 1.1em;
         line-height: 1em;
+        @include mixins.mobile-styles() {font-size: 1.375rem;}
+
     }
     .about__text {
         line-height: 2.25em;

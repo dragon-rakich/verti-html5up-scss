@@ -12,7 +12,7 @@
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 5em 0;
     @include mixins.tablet-portrait-styles() {padding: 0; font-size: 1.0625rem;}
-    @include mixins.mobile-styles() {font-size: 1.1875rem;}
+    @include mixins.mobile-styles() {padding-inline: 1.3em; font-size: 1.1875rem;}
 
     .about__grid {
         display: grid;
@@ -20,9 +20,9 @@
         @include mixins.tablet-portrait-styles() {grid-template-columns: 1fr;}
         
         .about__col {
-            @include mixins.tablet-portrait-styles() {
-                padding-block: 5em;
-            }
+            @include mixins.tablet-portrait-styles() {padding-block: 5em;}
+            @include mixins.mobile-styles() {padding-block: 3em;}
+
             &:nth-child(2) {
                 @include mixins.tablet-portrait-styles() {grid-row: 1/2; border-bottom: 1px solid #e8e8e8;}
             }
