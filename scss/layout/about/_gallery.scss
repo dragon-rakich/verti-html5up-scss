@@ -16,6 +16,8 @@
         margin-bottom: 3em;
         @include mixins.tablet-landscape-styles() {gap: 12px;}
         @include mixins.tablet-portrait-styles() {width: 100%;}
+        @include mixins.mobile-styles() {gap: 10px;}
+
 
         .about__gallery-img {
             width: 100%;
