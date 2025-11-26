@@ -5,7 +5,9 @@
 .header__logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 22px;
+    @include mixins.mobile-styles() {gap: 12px;}
+
 
     .header__logo-name {
         font-family: variables.$secondary-ff;
@@ -18,11 +20,13 @@
         background-color: variables.$logo-color;
         padding: 0.1em 0.2em;
         border-radius: 5px;
+
+        @include mixins.mobile-styles() {padding: 0.05em 0.2em;}
+
     }
 
     .header__logo-credit {
         font-weight: 800;
-        line-height: 4.5em;
         letter-spacing: 0.025em;
         
     }
